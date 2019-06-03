@@ -2,6 +2,7 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.addDancerButton').on('click', function(event) {
+    alert('you clicked it');
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -9,6 +10,8 @@ $(document).ready(function() {
      * maker functions available in the global scope, clicking that node
      * will call the function to make the dancer.
      */
+    
+    //makeBlinkyDancer();
 
     /* dancerMakerFunctionName is a string which must match
      * one of the dancer maker functions available in global scope.
@@ -23,8 +26,8 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);

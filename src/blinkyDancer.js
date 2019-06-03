@@ -17,3 +17,18 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 
   return blinkyDancer;
 };
+
+//
+
+var makeBlinkyDancer = function() {
+  makeDancer.call(this);
+  
+};
+
+makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+
+makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+
+
+
+

@@ -33,5 +33,14 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
+
+  $('.lineUpButton').on('click', function(event) {
+    for (var dancer of window.dancers){
+       dancer.lineUp();
+    }
+    // window.dancers.forEach(function(dancer){
+    //   dancer.lineUp();
+    // });
+  });
 });
 

@@ -1,7 +1,7 @@
 var makeRainbowDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  his.$node = $('<span class="rainbow"></span>');
-  
+  this.$node = $('<span class="rainbow"></span>');
+  this.setPosition();
 };
 
 makeRainbowDancer.prototype = Object.create(makeDancer.prototype);
@@ -9,13 +9,15 @@ makeRainbowDancer.prototype = Object.create(makeDancer.prototype);
 makeRainbowDancer.prototype.constructor = makeRainbowDancer;
 
 makeRainbowDancer.prototype.step = function() {
+  // makeDancer.prototype.setPosition.call(this);
   makeDancer.prototype.step.call(this);
-  makeDancer.prototype.setPosition()
-  this.$node.show(this);
+
+  this.$node.toggle();
 
 };
 
-makeRainbowDancer.prototype.setPosition = function(){
-	makeDancer.prototype.setPosition()
-}
- //butt
+// makeRainbowDancer.prototype.setPosition = function(){
+// 	makeDancer.prototype.setPosition.call(this);
+// }
+ //buttal
+

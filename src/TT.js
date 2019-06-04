@@ -1,7 +1,7 @@
 var makeTTDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   //this.$node = $('<span class="rainbow"></span>');
-  this.$node = $('<img class="gif" src="giphy.gif">');
+  this.$node = $('<img class="gif grow bounce" src="giphy.gif">');
   this.setPosition();
 };
 

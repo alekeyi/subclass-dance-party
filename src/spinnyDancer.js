@@ -1,7 +1,7 @@
 var makeGifDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   //this.$node = $('<span class="rainbow"></span>');
-  this.$node = $('<img class="gif" src="gw-dance.gif">');
+  this.$node = $('<img class="gif bounce" src="gw-dance.gif">');
   this.setPosition();
 };
 

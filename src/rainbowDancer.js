@@ -1,6 +1,6 @@
 var makeRainbowDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="rainbow"></span>');
+  this.$node = $('<span class="rainbow grow"></span>');
   this.setPosition();
 };
 

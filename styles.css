@@ -7,7 +7,7 @@ body{
   background-color:#444;
   background-image: url("disco.gif");
   background-repeat: no-repeat, repeat;
-  background-size: auto;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{

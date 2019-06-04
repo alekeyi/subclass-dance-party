@@ -18,3 +18,4 @@ makeRainbowDancer.prototype.step = function() {
 makeRainbowDancer.prototype.setPosition = function(){
 	makeDancer.prototype.setPosition()
 }
+ //butt
